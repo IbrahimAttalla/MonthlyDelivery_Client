@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Medium</string>
+        </array>
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="hBo-9m-Y23">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="توصيل شهري " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvD-PA-w28">
+                                <rect key="frame" x="61" y="270" width="198" height="45.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="33"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MONTHLY DELIVERY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hel-qw-M0e">
+                                <rect key="frame" x="88" y="320.5" width="143.5" height="20.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="rpt-oe-bLo">
+                                <rect key="frame" x="75" y="40" width="170" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="G7B-BY-xC0"/>
+                                    <constraint firstAttribute="height" constant="210" id="cMq-Z6-aXn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOADING ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4F-R5-EfS">
+                                <rect key="frame" x="117.5" y="419.5" width="84.5" height="20.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kvD-PA-w28" firstAttribute="top" secondItem="rpt-oe-bLo" secondAttribute="bottom" constant="20" id="4kB-zw-cY3"/>
+                            <constraint firstItem="rpt-oe-bLo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="54y-mh-EaE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="t4F-R5-EfS" secondAttribute="bottom" constant="40" id="9DK-EE-ywt"/>
+                            <constraint firstItem="hBo-9m-Y23" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="EjR-cs-tRR"/>
+                            <constraint firstItem="rpt-oe-bLo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="F8f-gN-la3"/>
+                            <constraint firstItem="hBo-9m-Y23" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LCF-6I-jvS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hBo-9m-Y23" secondAttribute="trailing" id="RM0-Tc-BVt"/>
+                            <constraint firstItem="kvD-PA-w28" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="TfR-EN-a4N"/>
+                            <constraint firstItem="t4F-R5-EfS" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="d04-rF-hxl"/>
+                            <constraint firstItem="hel-qw-M0e" firstAttribute="top" secondItem="kvD-PA-w28" secondAttribute="bottom" constant="5" id="dDj-lS-PMQ"/>
+                            <constraint firstItem="hel-qw-M0e" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="f5K-WJ-VlU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hBo-9m-Y23" secondAttribute="bottom" id="lfJ-9A-9KF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="719" height="1280"/>
+        <image name="logo" width="364" height="483"/>
+    </resources>
+</document>
